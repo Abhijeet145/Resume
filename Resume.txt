@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Abhijeet}{Kumar}{ 
+\href{mailto:abhijeet145.akm@gmail.com}{abhijeet145.akm@gmail.com} | +91 9784531394 | \href{https://www.linkedin.com/in/abhijeet-kumar-8b1b9a218/}{LinkedIn} | \href{https://github.com/Abhijeet145}{Github}
+| \href{https://leetcode.com/abhijeet_19403/}{Leetcode} | \href{https://codeforces.com/profile/abhijeet_19403}{ Codeforces} | \href{https://auth.geeksforgeeks.org/user/abhijeet19403/practice}{ GFG} | \href{https://www.codechef.com/users/abhijeet_19403}{codechef} | \href{https://www.hackerrank.com/abhijeet_19403}{hackerrank}
+} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.38\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{KAMLA NEHRU INSTITUTE OF TECHNOLOGY, \\SULTANPUR}
+\descript{B.TECH IN ELECTRONICS ENGINEERING}
+\location{2023 | 8.48 CGPA | Sultanpur, India}
+\sectionsep
+
+\subsection{ST. PETER INTER COLLEGE}
+\descript{INTERMEDIATE (ISC)}
+\location{2018 | 78.5\% | Nanpara, India}
+\sectionsep
+\subsection{ST. PETER INTER COLLEGE}
+\descript{HIGH SCHOOL (ICSE)}
+\location{2016 | 91.2\% | Nanpara, India}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal projects}
+
+\runsubsection{To Do List}
+\descript{\href{https://to-do-list-eyqq.onrender.com} {Live}  | \href{https://github.com/Abhijeet145/TO-DO-LIST}{Code} }
+\vspace{\topsep}
+\begin{tightemize}
+\item This is a full stack to do list web app. 
+\item We can also make new lists on the go using this.
+\item Technologies used:{\bf HTML, CSS, javascript, MongoDB, Node.js, EJS}
+\end{tightemize}
+
+
+
+\runsubsection{Tindog}
+\descript{\href{https://abhijeet145.github.io/TinDog/} {Live}  | \href{https://github.com/Abhijeet145/TinDog}{Code} }
+\vspace{\topsep}
+\begin{tightemize}
+\item This is the frontend of a site which
+is just a tindor for dogs.
+\item Technologies used: {\bf HTML, CSS, javascript, Bootstrap}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Appointments}
+\descript{\href{https://appointments-tj6f.onrender.com/} {Live}  | \href{https://github.com/Abhijeet145/Appointments-App-}{Code} }
+\vspace{\topsep}
+\begin{tightemize}
+\item Using this web app we can book our appointments
+
+\item We can search and sort the appointments based on the username , date or petname
+\item Technologies used: {\bf HTML, CSS, Javascript, React , Tailwind CSS}
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Class Notes}
+\descript{\href{https://abhijeet145.github.io/study/mathssem3.html} {Live}  | \href{https://github.com/Abhijeet145/study}{Code} }
+\vspace{\topsep}
+\begin{tightemize}
+\item A website from where students can download the class notes.
+\item Used by 650+ students of my college
+\item Technologies used: {\bf HTML , CSS }
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.6\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{GeeksForGeeks}
+\descript{| \href{https://drive.google.com/file/d/1ZnxjSShAJMtP7DhtV5o64t9FhJ-xOXfl/view?usp=share_link}{Technical Content Writer} | Internship }
+\location{October 2022 - Present  | Remote, India}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Improved 300+ articles based on Data Structures and Algorithms
+\item Added codes in different languages like C++ , Java , Python3 , C\# and JavaScript for existing articles
+\item Added better approaches for existing articles
+\item Improving articles helped me deeply in understanding the data structures and algorithms
+\end{tightemize}
+
+\sectionsep
+\runsubsection{Chegg India}
+\descript{| QnA expert | Freelance }
+\location{September 2020 - June 2022  | Remote, India}
+\vspace{\topsep} 
+\begin{tightemize}
+\item Provided solution of 150+ other maths problems.
+\item Solving complex problems improved my problem solving skills
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+Top {\bf3.93 \%} {\bf Knight} {\bf500+} questions on {\bf Leetcode} | Max rating: {\bf1923}
+\begin{tightemize}
+\vspace{\topsep}
+\item {\bf AIR 19 }(166 Global) in Weekly Contest 336\end{tightemize}
+\begin{tightemize}
+\item {\bf AIR 178 }in BiWeekly Contest 100\end{tightemize}
+\item {\bf ICPC'22} Regionalist\\
+\item {\bf Pupil} on Codeforces | Max rating: {\bf1378}\\
+\item {\bf800+} questions on GeeksForGeeks{\bf (IR 1)}\\
+
+
+\item {\bf3 Star} Codechef | Max rating {\bf1694}
+\begin{tightemize}
+\item {\bf96 Global Rank} in February Long Challenge 2022 - 1\end{tightemize}
+\item {\bf5 Star} on HackerRank in C++ , Python and Java\\
+\item {\bf2148th} Global Rank in Google KickStart G\\
+
+\\\item {\bf1700+} DSA problems solved across various platforms
+\\\item {\bf GATE CS 23} qualified
+\sectionsep
+
+\section{Skills}
+
+\item {\bf Languages:}C, C++, Java, Python, JavaScript, HTML, CSS\\ 
+\item {\bf Tools and Databases:}Git, GitHub, VScode, MongoDB, MySQL\\ 
+\item {\bf Lib/Frameworks:}Node, React, Express, MUI, EJS, Tailwind CSS \\ 
+\item {\bf Others:} Data Structures, Algorithms, Object-Oriented Programming, DBMS , Operating Systems , Computer Networks
+ 
+\sectionsep
+
+\section{Languages}
+{\bf English - } Full Professional Proficiency | {\bf Hindi - }Native or Bilingual Proficiency
+\sectionsep
+
+
+\section{Interests}
+Developing Web pages | 
+Content Writing |
+Competitive Programming
+
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
