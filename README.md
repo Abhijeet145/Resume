@@ -1,7 +1,7 @@
 # Resume
-Code for the resume in latex
+How to get your resume
 
-#Steps
+# Steps
 1. open a new template on overleaf.com
 2. paste the code from above 
 3. edit the code with your info
